@@ -24,6 +24,12 @@ class FizzBuzz < Number
   end
 end
 
+class Moo < Number
+  def response
+    "Moo"
+  end
+end
+
 class Fazz < Number
   def response
     "Fazz"
@@ -60,6 +66,7 @@ end
 module IsDivisibleBy
   DEFAULT_CLASS = Number
   SPECIALIZED_CLASSES = {
+    23 => Moo,
     42 => BeepBoop,
     15 => FizzBuzz,
     7 => Cranberry,

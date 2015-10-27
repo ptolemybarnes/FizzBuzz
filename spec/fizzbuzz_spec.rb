@@ -27,6 +27,10 @@ describe Game do
       it { expect(game.play 42).to eq "BeepBoop" }
       it { expect(game.play 84).to eq "BeepBoop" }
     end
+    context 'Moo' do
+      it { expect(game.play 23).to eq "Moo" }
+    end
+
     context 'pass the number' do
       it { expect(game.play 4).to eq 4 }
       it { expect(game.play 8).to eq 8 }
